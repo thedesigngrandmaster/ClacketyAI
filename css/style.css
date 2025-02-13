@@ -1,0 +1,131 @@
+@import url("/css/header.css");
+@import url("/css/footer.css");
+@import url("/css/variables.css");
+
+.home {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('/assets/images/bg/Premium\ Vector\ _\ Blue\ wavy\ halftone\ on\ white\ background\ vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0ch -15ch;
+    filter: contrast(1.2);
+}
+
+.hero {
+    width: 100%;
+    min-height: 60vh;
+    padding-top: 5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(2px);
+}
+
+.hero h1 {
+    width: 70%;
+    font-size: 4rem;
+    line-height: 4.1rem;
+    letter-spacing: -1px;
+    color: var(--black);
+}
+
+.hero h1 span {
+    color: var(--second-color);
+}
+
+.hero p {
+    color: var(--black);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.hero .call-to-action {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+}
+
+.hero .call-to-action a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--second-color);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+
+.hero .call-to-action a:hover {
+    filter: brightness(0.9);
+}
+
+.hero .call-to-action a:active {
+    opacity: .7;
+}
+
+.hero .call-to-action span {
+    color: var(--black);
+    opacity: .8;
+    text-transform: capitalize;
+    font-size: .8rem;
+}
+
+#about {
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+}
+
+.label {
+    padding: .5rem .8rem;
+    border: .1rem solid rgba(11, 124, 158, 0.5);
+    border-radius: 50px;
+    text-transform: lowercase;
+    font-weight: 600;
+    color: rgba(11, 124, 158, 0.8);
+    margin-bottom: 2rem;
+}
+
+.about-part {
+    width: 100vw;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    padding: 0 5%;
+}
+
+.about-part .about-text {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+
+.about-part .about-svg {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

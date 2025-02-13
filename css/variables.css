@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'lumixia';
+    src: url('/assets/fonts/Lumixia\ Thin.otf');
+}
+
+:root {
+    font-family: 'Montserrat', 'Lumixia' sans-serif;
+    --secondary-color: #00447c;
+    --second-color: #0b7b9e;
+    --bg-color: #f2f3f4;
+    --grey: #c6c3b6;
+    --black: #0c0c0c;
+    --white: #fff;
+    scroll-behavior: smooth;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+*, *::after, *::before {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+}
+
+::selection {
+    background: var(--second-color);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--second-color);
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: clip;
+    color: var(--black-1);
+    font-family: 'Montserrat';
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    /* padding: 2rem 0 0 0; */
+}

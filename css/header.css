@@ -1,0 +1,88 @@
+@import url("/css/variables.css");
+
+header {
+    width: 60vw;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: rgba(11, 124, 158, 0.1);
+    backdrop-filter: blur(20px);
+    border: .1rem solid rgba(11, 124, 158, 0.31);
+    border-radius: 50px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: start;
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0px 2px #0000006c)
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 0 2rem;
+}
+
+nav .logo-text .top {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+nav .logo-text .top .logo {
+    text-decoration: none;
+    background-color: var(--second-color);
+    color: var(--white);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: .2rem;
+    border-color: var(--white);
+    border-style: dashed;
+    border-radius: 41% 59% 43% 57% / 52% 46% 54% 48% ;
+    /* filter: drop-shadow(0px 0px 20px #0000007a); */
+}
+
+nav .logo-text .top .logo i {
+    transform: rotate(-80deg);
+}
+
+nav .logo-text .top .text {
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+nav .logo-text .top .text span {
+    color: var(--second-color);
+    font-weight: 600;
+    font-family: 'Lumixia';
+    letter-spacing: 2px;
+}
+
+nav .cta a {
+    background-color: var(--second-color);
+    color: var(--white);
+    font-size: .8rem;
+    padding: .7rem 1rem;
+    border-radius: 50px;
+}
+
+nav .cta a:hover {
+    filter: brightness(0.9);
+}
+
+nav .cta a:active {
+    opacity: .8;
+}
