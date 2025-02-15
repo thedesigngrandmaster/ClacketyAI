@@ -39,6 +39,7 @@
 }
 
 body {
+    position: relative;
     width: 100vw;
     min-height: 100vh;
     overflow-x: clip;
@@ -55,5 +56,45 @@ main {
     align-items: center;
     justify-content: center;
     background: var(--bg-color);
-    /* padding: 2rem 0 0 0; */
+}
+
+section {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    margin: 0 0 2rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    text-decoration: none;
+    background-color: var(--second-color);
+    color: var(--white);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: .2rem;
+    border-color: var(--white);
+    border-style: dashed;
+    border-radius: 41% 59% 43% 57% / 52% 46% 54% 48%;
+}
+
+.logo i {
+    transform: rotate(-80deg);
+}
+
+.text {
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text span {
+    color: var(--second-color);
+    font-weight: 600;
+    font-family: 'Lumixia';
+    letter-spacing: 2px;
 }
