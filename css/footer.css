@@ -84,7 +84,7 @@ footer .main-footer {
     height: 100%;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 11.5rem);
+    grid-template-columns: repeat(4, 15rem);
     grid-template-rows: minmax(150px auto);
     grid-gap: 1rem;
     align-items: start;
@@ -110,7 +110,7 @@ footer .main-footer ul {
 
 footer .main-footer ul li {
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: start;
     gap: 5px;
@@ -147,18 +147,43 @@ footer .main-footer ul li a:hover {
     color: var(--black);
 }
 
-footer .main-footer .connect ul {
+footer .main-footer .connect {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer .main-footer .connect .upper {
+    transform: translateX(-2rem);
+}
+
+footer .main-footer .connect .upper h1 {
+    transform: translateX(-10px);
+}
+
+footer .main-footer .connect .upper ul {
     flex-flow: row;
 }
 
-footer .main-footer .connect ul li {
-    transform: translateX(-1rem);
+footer .main-footer .connect .upper ul li {
     font-size: 1.5rem;
+    transform: translateX(-1rem);
 }
 
-footer .main-footer .connect ul li:hover a {
+footer .main-footer .connect .upper ul li:hover a {
     color: var(--second-color);
     transform: translateY(5px);
+}
+
+footer .main-footer .connect .lower ul li {
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+footer .main-footer .connect .lower ul li a {
+    color: var(--second-color);
 }
 
 footer .footer-bottom {
