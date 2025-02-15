@@ -2,3 +2,189 @@
 @import url("/css/footer.css");
 @import url("/css/variables.css");
 @import url("/css/style.css");
+
+section {
+    margin-bottom: 5rem;
+}
+
+.hero {
+    margin-top: 5.5rem;
+}
+
+.authors {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.authors #samuel {
+    width: 80%;
+    min-height: 250px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.authors #gaji {
+    width: 80%;
+    min-height: 250px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.authors .author .author-pic {
+    width: 20rem;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 41% 59% 43% 57% / 52% 46% 54% 48%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.authors .author .author-pic .image {
+    width: 19rem;
+    height: 19rem;
+    background: var(--second-color);
+    border-radius: 41% 59% 43% 57% / 52% 46% 54% 48%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.authors .author .author-bio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.authors .author .author-bio .text {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.authors .author .author-bio .more {
+    gap: 2rem;
+}
+
+.reviews {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonial-container {
+    background-color: rgba(11, 124, 158, 0.31);
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 768px;
+    position: relative;
+  }
+  
+  .bi-blockquote {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+  }
+  
+  .bi-chat-left-quote {
+    left: 40px;
+  }
+  
+  .bi-chat-right-quote {
+    right: 40px;
+  }
+  
+  .testimonial {
+    line-height: 28px;
+    text-align: justify;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user .user-image {
+    border-radius: 50%;
+    background-color: var(--white);
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+  }
+  
+  .user .user-details {
+    margin-left: 10px;
+  }
+  
+  .user .username {
+    color: var(--second-color);
+    margin: 0;
+  }
+  
+  .user .role {
+    color: var(--black);
+    font-weight: normal;
+    margin: 5px 0;
+  }
+  
+  .progress-bar {
+    background-color: var(--second-color);
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+  }
+  
+  @keyframes grow {
+    0% {
+      transform: scaleX(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-container {
+      padding: 20px 30px;
+    }
+  
+    .fa-quote {
+      display: none;
+    }
+  }
